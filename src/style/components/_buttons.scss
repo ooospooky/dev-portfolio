@@ -31,17 +31,18 @@
   border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   border-image-slice: 1;
   cursor: pointer;
+  color: $primary-color;
 
 
   &::after {
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
- 
+
   }
 
   &:hover {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
-
+    color: $white-color;
 
     &::after {
       width: 100%;

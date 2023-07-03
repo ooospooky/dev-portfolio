@@ -1,0 +1,21 @@
+.hero{
+  padding: 0 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  min-height: 100vh ;
+  &__h1{
+    margin-bottom: 3.2rem;
+    text-align: left;
+    font-size: 5.6rem;
+  }
+  &__colorH1{
+    color:$primary-color;
+  }
+  &__cta{
+    display:flex;
+    font-size:2.4rem;
+  }
+}

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+// import { faFile } from '@fortawesome/free-regular-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -15,12 +18,27 @@ export const Hero = () => {
   return (
     <div id="hero" className='hero'>
       <h1 className="hero__h1">
-        <span >Hi, I'm <span className="hero__colorH1">Johnny</span>.</span>
+        Hi, I'm <span className="hero__colorH1">Johnny.</span>
         <br />
-        <span>I'm a Front End Developer.</span>
+        I'm a Front End Developer.
       </h1>
-      <span className="cta-btn cta-btn--hero">123</span>
-      <FontAwesomeIcon icon="fa-solid fa-file" />
+      <p className="hero__cta">
+        <a href="https://github.com/ooospooky" target="_blank" >
+          <span className="cta-btn cta-btn--hero">
+            GitHub	&thinsp;
+            <FontAwesomeIcon icon={faGithub} />
+          </span>
+        </a>
+        <a href="https://drive.google.com/file/d/1HmA8RRqg6JEZbMwOmPxNQeatVsbQ7XvO/view?usp=sharing" target="_blank" >
+          <span className="cta-btn cta-btn--hero">
+            Resume  &thinsp;
+            <FontAwesomeIcon icon={faFile} />
+          </span>
+        </a>
+      </p>
+
+
+
     </div>
   )
 }
