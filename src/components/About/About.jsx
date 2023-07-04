@@ -2,6 +2,6 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <div className='about'>About</div>
+    <section id="about" className='about'>About</section>
   )
 }

@@ -16,7 +16,7 @@ export const Hero = () => {
     }
   }, []);
   return (
-    <div id="hero" className='hero'>
+    <section id="hero" className='hero'>
       <h1 className="hero__h1">
         Hi, I'm <span className="hero__colorH1">Johnny.</span>
         <br />
@@ -38,6 +38,6 @@ export const Hero = () => {
       </p>
 
 
-    </div>
+    </section>
   )
 }

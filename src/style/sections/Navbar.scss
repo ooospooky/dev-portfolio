@@ -1,0 +1,36 @@
+.navbar {
+  width: 100%;
+  padding: 25px 40px 25px 50px;
+  background-color: $white-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+  position: fixed;
+  z-index: 2;
+  // display:flex;
+  // justify-content:space-between;
+  // align-items:center;
+  &__h3 {
+    color: #2d2e32;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem ;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    li {
+      color: #2d2e32;
+      font-weight: 600;
+      font-size: 1.7rem;
+      text-decoration: none;
+      transition: all .25s;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
