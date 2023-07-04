@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
-// import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 export const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,7 +36,6 @@ export const Hero = () => {
           </span>
         </a>
       </p>
-
 
 
     </div>

@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import whatShouldIWear from '../../images/whatShouldIWear.png';
 export const Projects = () => {
   return (
-    <div className='project'>
+    <section id="project" className='project'>
       <div className='container'>
         <h2 className='project__h2'> PROJECTS </h2>
         <div className='project-wrapper'>
@@ -84,6 +84,6 @@ export const Projects = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
