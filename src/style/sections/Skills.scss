@@ -1,4 +1,36 @@
 .skills{
-  height: 80vh;
+  height: 100vh;
   background-color: $primary-color;
+  padding:4rem;
+  display:flex;
+  flex-direction: column ;
+  h3{
+    font-size:$big-font-size;
+  }
+  &__warper{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    padding:2rem 10rem;
+    
+    h4{
+      font-size:$mid-font-size;
+      color:white
+    }
+  }
+  &__content{
+    display:flex;
+    justify-content: center;
+    gap:8rem;
+    color:white;
+    div{
+      height:100px;
+      width:100px;
+    }
+    img{
+      margin-bottom: 1rem;
+      height:55px;
+      width:55px;
+    }
+  }
 }
