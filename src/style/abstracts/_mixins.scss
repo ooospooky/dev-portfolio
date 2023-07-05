@@ -9,6 +9,11 @@
 
 1em = 16px
 
+ @media(max-width:800px) {
+    }
+     @include respond(tab-port) {
+      font-size: 4rem;
+    }
 */
 @mixin respond($breakpoint) {
   // Phone-xs
