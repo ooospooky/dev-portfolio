@@ -12,10 +12,10 @@
 */
 @mixin respond($breakpoint) {
   // Phone-xs
-  @if $breakpoint == phone-xs {
-    @media (max-width: 20em) {
+  @if $breakpoint == phone-XR {
+    @media (max-width: 25.875em) {
       @content;
-    } //0 - 320px
+    } //0 - 414px
   }
   // Phone
   @if $breakpoint == phone {
