@@ -22,3 +22,15 @@ export const left200Animation = keyframes`
     transform: translate3d(0, 0, 0);
   }
 `;
+
+export const upProjectAnimation = keyframes`
+  triggerOnce={true}
+  from {
+    opacity: 0;
+    transform: translate3d(0,100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
