@@ -1,20 +1,27 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowAltUpRight } from '@fortawesome/free-regular-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Fade } from "react-awesome-reveal";
+
+import { upProjectAnimation} from '../../Animations/Animation'
+
 import whatShouldIWear from '../../images/whatShouldIWear.png';
 export const Projects = () => {
   return (
     <section id="project" className='project'>
       <div className='container'>
         <h2 className='project__h2'> PROJECTS </h2>
+        <Fade triggerOnce={true} delay={500} keyframes={upProjectAnimation} >
+
         <div className='project-wrapper'>
           <div className='projectImg'>
-          <a href="https://github.com/ooospooky/What-Should-I-Wear" target="_blank" >
-            {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
-            <img className='img' src={whatShouldIWear} />
+            <a href="https://github.com/ooospooky/What-Should-I-Wear" target="_blank" >
+              {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
+
+                <img className='img' src={whatShouldIWear} />
             </a>
+
           </div>
           <div className='projectContent'>
             <h3 className='projectContent__h3'>What Should I Wear</h3>
@@ -44,7 +51,7 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-
+      </Fade>
 
         <div className='project-wrapper'>
 
@@ -77,8 +84,8 @@ export const Projects = () => {
             </div>
           </div>
           <div className='projectImg'>
-          <a href="https://coolcamp-f0b6e.web.app/" target="_blank" >
-            <img className='img' src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png" />
+            <a href="https://coolcamp-f0b6e.web.app/" target="_blank" >
+              <img className='img' src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png" />
             </a>
           </div>
         </div>
