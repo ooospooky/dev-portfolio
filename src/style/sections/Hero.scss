@@ -6,10 +6,40 @@
   align-items: flex-start;
   height: 100vh;
   min-height: 100vh ;
+  @include respond(tab-port) {
+    padding: 0 8rem;
+  }
+  @media(max-width:660px) {
+    padding: 0 5rem;
+  }
+ 
   &__h1{
     margin-bottom: 3.2rem;
     text-align: left;
     font-size: 5.6rem;
+    @include respond(small-tab-land) {
+      font-size: 4.7rem;
+    }
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+    @media(max-width:800px) {
+      font-size: 3.5rem;
+    }
+    @media(max-width:730px) {
+      font-size: 3rem;
+    }
+    @media(max-width:660px) {
+      font-size: 2.6rem;
+    }
+    @include respond(phone) {
+      font-size: 2.4rem;
+    }
+    @include respond(phone-XR) {
+      font-size: 2.2rem;
+    }
+
+    
   }
   &__colorH1{
     color:$primary-color;
@@ -17,5 +47,14 @@
   &__cta{
     display:flex;
     font-size:2.4rem;
+    @media(max-width:800px) {
+      font-size: 2rem;
+    }
+    @media(max-width:660px) {
+      font-size: 1.5rem;
+    }
+    @include respond(phone-XR) {
+      font-size: 1.3rem;
+    }
   }
 }
