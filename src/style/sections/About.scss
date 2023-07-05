@@ -1,24 +1,41 @@
-.about{
+.about {
   height: 100vh;
   margin: 0 auto;
-  padding:15rem 4rem;
-  display:flex;
+  padding: 5rem 4rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  &__h2{
-    font-size:5rem;
+
+  @media(max-width:800px) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 1rem;
+  }
+
+  &__h2 {
+    font-size: 5rem;
     font-family: 'Monoton', cursive;
     text-align: left;
     margin-bottom: 3rem;
+
+    @media(max-width:800px) {
+      text-align: center;
+    }
   }
+
   @keyframes movingPhoto {
     0% {
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+
     50% {
       border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
+
     100% {
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
@@ -34,22 +51,67 @@
     background-size: cover;
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    height: 35rem;
     position: relative;
     transition: all 1s ease-in-out;
+    height: 35rem;
     width: 35rem;
-  }
-  &__content{
-    text-align: left;
-    width:50%;
-    h3{
-      font-size:$mid-font-size;
+
+    @include respond(phone-XR) {
+      height: 25rem;
+      width: 25rem;
     }
-    p{
+  }
+
+  &__content {
+    text-align: left;
+    width: 50%;
+
+    @media(max-width:800px) {
+      width: 90%;
+      height: 50%;
+    }
+
+    h3 {
+      font-size: $mid-font-size;
+
+      @media(max-width:920px) {
+        font-size: 2.3rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+
+      @media(max-width:800px) {
+        font-size: 2.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.2rem;
+      }
+
+      @include respond(phone-XR) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
       font-size: 1.7rem;
       color: #767676;
       font-weight: 500;
-    line-height: 1.5;
+      line-height: 1.5;
+
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+
+      @media(max-width:800px) {
+        font-size: 1.7rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
