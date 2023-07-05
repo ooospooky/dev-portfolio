@@ -38,6 +38,15 @@
 
 .haveSubmit{
   height: 100vh;
-  padding: 30rem 20rem;
-
+  padding: 10rem 20rem;
+  &__h2{
+    font-size:$big-font-size;
+  }
+  &__p{
+    font-size: 2rem;
+  }
+  &__emailAnimation{
+    height:500px;
+    width:500px;
+  }
 }
