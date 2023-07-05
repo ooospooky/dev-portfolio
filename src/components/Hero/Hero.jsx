@@ -1,27 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Fade } from "react-awesome-reveal";
+
+import {customAnimation} from '../../Animations/Animation'
 
 export const Hero = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  
   return (
-    <section id="hero" className='hero'>
+    <section id="hero" className='hero' >
+      <Fade  triggerOnce={true}  delay={500} keyframes={customAnimation} >
       <h1 className="hero__h1">
         Hi, I'm <span className="hero__colorH1">Johnny.</span>
         <br />
         I'm a Front End Developer.
       </h1>
+      </Fade >
+      <Fade  triggerOnce={true} delay={1000} keyframes={customAnimation} >
       <p className="hero__cta">
         <a href="https://github.com/ooospooky" target="_blank" >
           <span className="cta-btn cta-btn--hero">
@@ -36,6 +32,7 @@ export const Hero = () => {
           </span>
         </a>
       </p>
+      </Fade>
 
 
     </section>
