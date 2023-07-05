@@ -8,7 +8,8 @@ export const About = () => {
       </div>
       <div className='about__content'>
         <h3>A dedicated Front-end Developer</h3>
-        <p>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+
+        <p>As a Junior Front-End Developer, I excel in designing and maintaining responsive websites that offer a smooth user experience. I have a deep understanding of HTML, CSS, and JavaScript and can create visually appealing web elements and effects using these technologies. I also familiar with the React framework and can develop highly interactive and scalable single-page applications. Additionally, I am proficient in CSS preprocessors like SCSS, which help me organize and manage code more efficiently, speeding up the development process.</p>
       </div>
     </section>
   )
