@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { Player } from '@lottiefiles/react-lottie-player';
 import emailSent from '../../images/animations/emailSent.json'
+import { Fade } from "react-awesome-reveal";
+
+import { fadeupAnimation } from '../../Animations/Animation'
+
 export const Contact = () => {
 
   const [name, setName] = useState('');
@@ -45,7 +49,10 @@ export const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2 className='contact__h2'>Contact</h2>
+      <Fade  delay={100} keyframes={fadeupAnimation} >
       <p className='contact__p'>I'm actively seeking new opportunities. However, even if you don't have a job offer for me, I would appreciate it if you could drop by just to say hi! Additionally, please don't hesitate to provide any feedback or recommendations you may have.</p>
+      </Fade>
+      <Fade  delay={300} keyframes={fadeupAnimation} >
       <form onSubmit={onSubmit} className='contactForm'>
         <input
           className="form-input input"
@@ -63,6 +70,7 @@ export const Contact = () => {
 
         <button className="cta-btn cta-btn--hero contactForm__btn" type="submit">Submit</button>
       </form>
+      </Fade>
     </section>
   )
 }
