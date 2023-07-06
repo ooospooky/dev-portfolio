@@ -25,7 +25,7 @@ export const Hero = () => {
             <FontAwesomeIcon icon={faGithub} />
           </span>
         </a>
-        <a href="https://drive.google.com/file/d/1HmA8RRqg6JEZbMwOmPxNQeatVsbQ7XvO/view?usp=sharing" target="_blank" >
+        <a href="https://drive.google.com/file/d/1jkxZWmulYdhsZ8E2KvJIkOTPG2zbce-e/view?usp=sharing" target="_blank" >
           <span className="cta-btn cta-btn--hero">
             Resume  &thinsp;
             <FontAwesomeIcon icon={faFile} />
