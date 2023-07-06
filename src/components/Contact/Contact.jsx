@@ -7,18 +7,20 @@ import { Fade } from "react-awesome-reveal";
 import { fadeupAnimation } from '../../Animations/Animation'
 
 export const Contact = () => {
-
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_USER_ID;
   const [name, setName] = useState('');
   const [email, setEmail] = useState('')
   const [content, setContent] = useState('');
   const [haveSubmit, setHaveSubmit] = useState(false)
   const onSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_d49m74o', 'template_kvdlecf', {
+    emailjs.send(serviceId, templateId, {
       name: name,
       email: email,
       content: content
-    }, 'aTBJM00DT9GDdbq16')
+    }, userId)
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
         setHaveSubmit(!haveSubmit);
