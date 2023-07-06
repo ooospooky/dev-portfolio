@@ -14,7 +14,7 @@ export const Projects = () => {
         <h2 className='project__h2'> PROJECTS </h2>
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation} >
 
-          <div className='project-wrapper'>
+          <div className='project-wrapper project-wrapper__odd'>
             <div className='projectImg'>
               <a href="https://github.com/ooospooky/What-Should-I-Wear" target="_blank" >
                 {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
@@ -53,7 +53,7 @@ export const Projects = () => {
           </div>
         </Fade>
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation} >
-          <div className='project-wrapper'>
+          <div className='project-wrapper project-wrapper__even'>
             <div className='projectContent'>
               <h3 className='projectContent__h3'>Cool Camp</h3>
               <p className='projectContent__p'>

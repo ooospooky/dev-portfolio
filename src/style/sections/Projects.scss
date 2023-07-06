@@ -38,13 +38,14 @@
 
   @include respond(tab-port) {
     height: 100%;
-    &:nth-child(even) {
-      flex-direction: column;
+    &__odd{
+    flex-direction: column;
+
     }
-    &:nth-child(odd) {
-      flex-direction: column-reverse;
+    &__even {
+    flex-direction: column-reverse;
     }
-   
+
   }
 }
 
