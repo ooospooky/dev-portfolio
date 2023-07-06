@@ -51,10 +51,10 @@ export const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2 className='contact__h2'>Contact</h2>
-      <Fade  delay={100} keyframes={fadeupAnimation} >
+      <Fade triggerOnce={true} delay={100} keyframes={fadeupAnimation} >
       <p className='contact__p'>I'm actively seeking new opportunities. However, even if you don't have a job offer for me, I would appreciate it if you could drop by just to say hi! Additionally, please don't hesitate to provide any feedback or recommendations you may have.</p>
       </Fade>
-      <Fade  delay={300} keyframes={fadeupAnimation} >
+      <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation} >
       <form onSubmit={onSubmit} className='contactForm'>
         <input
           className="form-input input"
