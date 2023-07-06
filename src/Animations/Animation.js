@@ -1,6 +1,5 @@
 import { keyframes } from "@emotion/react";
 export const customAnimation = keyframes`
-  triggerOnce={true}
   from {
     opacity: 0;
     transform: translate3d(-100px, 0, 0);
@@ -12,7 +11,6 @@ export const customAnimation = keyframes`
 `;
 
 export const left200Animation = keyframes`
-  triggerOnce={true}
   from {
     opacity: 0;
     transform: translate3d(-200px, 0, 0);
@@ -23,11 +21,21 @@ export const left200Animation = keyframes`
   }
 `;
 
-export const upProjectAnimation = keyframes`
-  triggerOnce={true}
+export const fadeupAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(0,100px, 0);
+    transform: translate3d(0,50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
+export const aboutContentAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
   }
   to {
     opacity: 1;
