@@ -58,14 +58,37 @@
 .haveSubmit{
   height: 100vh;
   padding: 10rem 20rem;
+  @media(max-width:910px) {
+    padding: 10rem 10rem;
+  }
+  @media(max-width:710px) {
+    padding: 10rem 5rem;
+  }
+  @media(max-width:710px) {
+    padding: 10rem 2rem;
+  }
   &__h2{
     font-size:$big-font-size;
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
+    @include respond(phone-XR) {
+      font-size: 3rem;
+    }
   }
   &__p{
     font-size: 2rem;
+    @include respond(phone) {
+      font-size: 1.7rem;
+    }
+   
   }
   &__emailAnimation{
     height:500px;
     width:500px;
+    @include respond(phone) {
+      height:400px;
+      width:400px;
+    }
   }
 }
