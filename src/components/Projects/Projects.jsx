@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Fade } from "react-awesome-reveal";
 
 import { fadeupAnimation } from '../../Animations/Animation'
-
+import chart from '../../images/chart.png'
 import whatShouldIWear from '../../images/whatShouldIWear.png';
 export const Projects = () => {
   return (
@@ -52,8 +52,53 @@ export const Projects = () => {
             </div>
           </div>
         </Fade>
+        {/* Dashboard */}
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation} >
           <div className='project-wrapper project-wrapper__even'>
+            <div className='projectContent'>
+              <h3 className='projectContent__h3'>Dashboard</h3>
+              <p className='projectContent__p'>
+              Chart of Household and Population by Household Type and Gender. Presenting charts using Highcharts.</p>
+              <div className='projectContent__stack'>
+                <p>React</p>
+                <p>Typescript</p>
+                <p>Scss</p>
+              </div>
+              <div className='projectContent__btn'>
+                <p className="project__cta">
+                  <a href="https://github.com/ooospooky/dashboard" target="_blank" >
+                    <span className="cta-btn cta-btn--hero">
+                      Code	&thinsp;
+                      <FontAwesomeIcon icon={faGithub} />
+                    </span>
+                  </a>
+                </p>
+                <p className="project__cta">
+                  <a href="https://dashboard-3daad.web.app/" target="_blank" >
+                    <span className="cta-btn cta-btn--hero">
+                      Live Demo	&thinsp;
+                      {/* <FontAwesomeIcon icon={faArrowAltUpRight} /> */}
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className='projectImg'>
+              <a href="https://dashboard-3daad.web.app/" target="_blank" >
+                <img className='img' src={chart} />
+              </a>
+            </div>
+          </div>
+        </Fade>
+        {/* Cool Camp */}
+        <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation} >
+          <div className='project-wrapper project-wrapper__odd'>
+          <div className='projectImg'>
+              <a href="https://coolcamp-f0b6e.web.app/" target="_blank" >
+                <img className='img' src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png" />
+              </a>
+            </div>
             <div className='projectContent'>
               <h3 className='projectContent__h3'>Cool Camp</h3>
               <p className='projectContent__p'>
@@ -82,11 +127,7 @@ export const Projects = () => {
                 </p>
               </div>
             </div>
-            <div className='projectImg'>
-              <a href="https://coolcamp-f0b6e.web.app/" target="_blank" >
-                <img className='img' src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png" />
-              </a>
-            </div>
+      
           </div>
         </Fade>
 
