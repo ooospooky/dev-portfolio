@@ -8,6 +8,8 @@ import { fadeupAnimation } from "../../Animations/Animation";
 import chart from "../../images/chart.png";
 import whatShouldIWear from "../../images/whatShouldIWear.png";
 import foodOrder from "../../images/foodOrder.png";
+import ibuypowerIMG from "../../images/ibuypowerIMG.png";
+
 export const Projects = () => {
   return (
     <section id="project" className="project">
@@ -119,6 +121,60 @@ export const Projects = () => {
               >
                 <img className="img" src={foodOrder} />
               </a>
+            </div>
+          </div>
+        </Fade>
+        {/* iBUYPOWER */}
+        <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
+          <div className="project-wrapper project-wrapper__odd">
+            <div className="projectImg">
+              <a
+                href="https://i-buypower.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
+
+                <img className="img" src={ibuypowerIMG} />
+              </a>
+            </div>
+            <div className="projectContent">
+              <h3 className="projectContent__h3">iBUYPOWER</h3>
+              <p className="projectContent__p">
+                Using react-slick to make slider, UI clone from ibuypower.com
+              </p>
+              <div className="projectContent__stack">
+                <p>Next.js</p>
+                <p>React</p>
+                <p>Tailwind</p>
+              </div>
+              <div className="projectContent__btn">
+                <p className="project__cta">
+                  <a
+                    href="https://github.com/ooospooky/iBUYPOWER"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="cta-btn cta-btn--hero">
+                      Code &thinsp;
+                      <FontAwesomeIcon icon={faGithub} />
+                    </span>
+                  </a>
+                </p>
+                <p className="project__cta">
+                  <a
+                    href="https://i-buypower.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="cta-btn cta-btn--hero">
+                      Live Demo &thinsp;
+                      {/* <FontAwesomeIcon icon={faArrowAltUpRight} /> */}
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </Fade>
