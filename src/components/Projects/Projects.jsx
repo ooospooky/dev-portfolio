@@ -180,19 +180,7 @@ export const Projects = () => {
         </Fade>
         {/* Cool Camp */}
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
-          <div className="project-wrapper project-wrapper__odd">
-            <div className="projectImg">
-              <a
-                href="https://coolcamp-f0b6e.web.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="img"
-                  src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png"
-                />
-              </a>
-            </div>
+          <div className="project-wrapper project-wrapper__even">
             <div className="projectContent">
               <h3 className="projectContent__h3">Cool Camp</h3>
               <p className="projectContent__p">
@@ -233,6 +221,18 @@ export const Projects = () => {
                   </a>
                 </p>
               </div>
+            </div>
+            <div className="projectImg">
+              <a
+                href="https://coolcamp-f0b6e.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="img"
+                  src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png"
+                />
+              </a>
             </div>
           </div>
         </Fade>
