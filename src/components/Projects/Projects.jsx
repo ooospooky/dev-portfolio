@@ -8,13 +8,74 @@ import { fadeupAnimation } from "../../Animations/Animation";
 import chart from "../../images/chart.png";
 import whatShouldIWear from "../../images/whatShouldIWear.png";
 import foodOrder from "../../images/foodOrder.png";
-import ibuypowerIMG from "../../images/ibuypowerIMG.png";
+import appleAccessoriesImg from "../../images/appleAccessories.png";
 
 export const Projects = () => {
   return (
     <section id="project" className="project">
       <div className="container">
         <h2 className="project__h2"> PROJECTS </h2>
+        {/* Food Order System */}
+        <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
+          <div className="project-wrapper project-wrapper__even">
+            <div className="projectContent">
+              <h3 className="projectContent__h3">Apple Accessories</h3>
+              <p className="projectContent__p">
+                Clone of Apple Accessories webpage, built using React, Next.js,
+                Tailwind CSS, and Redux. It includes a homepage with a carousel
+                using React Slick and category pages like Mac, and iPhone, etc.
+                Users can navigate to product details, choose colors, and add
+                items to their shopping cart.
+              </p>
+              <div className="projectContent__stack">
+                <p>Next.js</p>
+                <p>Typescript</p>
+                <p>Redux</p>
+              </div>
+              <div className="projectContent__btn">
+                <p className="project__cta">
+                  <a
+                    href="https://github.com/ooospooky/apple-accessories"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="cta-btn cta-btn--hero">
+                      Code &thinsp;
+                      <FontAwesomeIcon icon={faGithub} />
+                    </span>
+                  </a>
+                </p>
+                <p className="project__cta">
+                  <a
+                    href="https://apple-accessories.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="cta-btn cta-btn--hero">
+                      Live Demo &thinsp;
+                      {/* <FontAwesomeIcon icon={faArrowAltUpRight} /> */}
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="projectImg">
+              <a
+                href="https://apple-accessories.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="img"
+                  src={appleAccessoriesImg}
+                  alt="apple accessories"
+                />
+              </a>
+            </div>
+          </div>
+        </Fade>
+
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
           <div className="project-wrapper project-wrapper__odd">
             <div className="projectImg">
@@ -25,7 +86,7 @@ export const Projects = () => {
               >
                 {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
 
-                <img className="img" src={whatShouldIWear} />
+                <img className="img" src={whatShouldIWear} alt="img" />
               </a>
             </div>
             <div className="projectContent">
@@ -71,113 +132,7 @@ export const Projects = () => {
             </div>
           </div>
         </Fade>
-        {/* Food Order System */}
-        <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
-          <div className="project-wrapper project-wrapper__even">
-            <div className="projectContent">
-              <h3 className="projectContent__h3">Food Order System</h3>
-              <p className="projectContent__p">
-                Allows users to browse food places, add items to the cart, and
-                submit orders.
-              </p>
-              <div className="projectContent__stack">
-                <p>Next.js</p>
-                <p>Typescript</p>
-                <p>Redux</p>
-              </div>
-              <div className="projectContent__btn">
-                <p className="project__cta">
-                  <a
-                    href="https://github.com/ooospooky/food-order-system"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="cta-btn cta-btn--hero">
-                      Code &thinsp;
-                      <FontAwesomeIcon icon={faGithub} />
-                    </span>
-                  </a>
-                </p>
-                <p className="project__cta">
-                  <a
-                    href="https://food-order-system-flax.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="cta-btn cta-btn--hero">
-                      Live Demo &thinsp;
-                      {/* <FontAwesomeIcon icon={faArrowAltUpRight} /> */}
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="projectImg">
-              <a
-                href="https://food-order-system-flax.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className="img" src={foodOrder} />
-              </a>
-            </div>
-          </div>
-        </Fade>
-        {/* iBUYPOWER */}
-        <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
-          <div className="project-wrapper project-wrapper__odd">
-            <div className="projectImg">
-              <a
-                href="https://i-buypower.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {/* <img className='img' src="https://i.ibb.co/5s6PrR8/2023-06-07-3-04-16.png" /> */}
 
-                <img className="img" src={ibuypowerIMG} />
-              </a>
-            </div>
-            <div className="projectContent">
-              <h3 className="projectContent__h3">iBUYPOWER</h3>
-              <p className="projectContent__p">
-                Using react-slick to make slider, UI clone from ibuypower.com
-              </p>
-              <div className="projectContent__stack">
-                <p>Next.js</p>
-                <p>React</p>
-                <p>Tailwind</p>
-              </div>
-              <div className="projectContent__btn">
-                <p className="project__cta">
-                  <a
-                    href="https://github.com/ooospooky/iBUYPOWER"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="cta-btn cta-btn--hero">
-                      Code &thinsp;
-                      <FontAwesomeIcon icon={faGithub} />
-                    </span>
-                  </a>
-                </p>
-                <p className="project__cta">
-                  <a
-                    href="https://i-buypower.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="cta-btn cta-btn--hero">
-                      Live Demo &thinsp;
-                      {/* <FontAwesomeIcon icon={faArrowAltUpRight} /> */}
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </Fade>
         {/* Cool Camp */}
         <Fade triggerOnce={true} delay={300} keyframes={fadeupAnimation}>
           <div className="project-wrapper project-wrapper__even">
@@ -231,6 +186,7 @@ export const Projects = () => {
                 <img
                   className="img"
                   src="https://i.ibb.co/RYVhTDC/2023-07-03-2-59-57.png"
+                  alt=""
                 />
               </a>
             </div>
