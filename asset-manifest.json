@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/dev-portfolio/static/css/main.456b656c.css",
-    "main.js": "/dev-portfolio/static/js/main.dcc46deb.js",
+    "main.js": "/dev-portfolio/static/js/main.612a1363.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
     "static/media/foodOrder.png": "/dev-portfolio/static/media/foodOrder.e852765c901c8ded6698.png",
     "static/media/whatShouldIWear.png": "/dev-portfolio/static/media/whatShouldIWear.844a78e40b75a9ee5cd3.png",
-    "static/media/ibuypowerIMG.png": "/dev-portfolio/static/media/ibuypowerIMG.be44c14dfa0fefc51be3.png",
+    "static/media/appleAccessories.png": "/dev-portfolio/static/media/appleAccessories.eb8e6deabb902424bdfb.png",
     "static/media/linux3.png": "/dev-portfolio/static/media/linux3.2205d1d4d34c2c246849.png",
     "static/media/chart.png": "/dev-portfolio/static/media/chart.f32a9bc93aea137a6a95.png",
     "static/media/nextjs.png": "/dev-portfolio/static/media/nextjs.9deba75e6be90d5f2879.png",
@@ -14,11 +14,11 @@
     "static/media/firebase.png": "/dev-portfolio/static/media/firebase.2a23f4f8980818de8394.png",
     "index.html": "/dev-portfolio/index.html",
     "main.456b656c.css.map": "/dev-portfolio/static/css/main.456b656c.css.map",
-    "main.dcc46deb.js.map": "/dev-portfolio/static/js/main.dcc46deb.js.map",
+    "main.612a1363.js.map": "/dev-portfolio/static/js/main.612a1363.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.456b656c.css",
-    "static/js/main.dcc46deb.js"
+    "static/js/main.612a1363.js"
   ]
 }
