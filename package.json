@@ -23,6 +23,7 @@
     "react-hook-form": "^7.45.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "sass": "^1.83.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -52,7 +53,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "node-sass": "^7.0.3"
+    "gh-pages": "^5.0.0"
   }
 }

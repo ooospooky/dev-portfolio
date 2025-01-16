@@ -46,7 +46,7 @@ export const Contact = () => {
         >
         </Player>
       </section>
-    )
+  )
   }
   return (
     <section id="contact" className="contact">
