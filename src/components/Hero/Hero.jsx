@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { Fade } from "react-awesome-reveal";
 
 import { customAnimation } from "../../Animations/Animation";
@@ -26,6 +27,16 @@ export const Hero = () => {
             <span className="cta-btn cta-btn--hero">
               GitHub &thinsp;
               <FontAwesomeIcon icon={faGithub} />
+            </span>
+          </a>
+          <a
+            href="https://medium.com/@bm414148"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="cta-btn cta-btn--hero">
+              Blog &thinsp;
+              <FontAwesomeIcon icon={faNewspaper} />
             </span>
           </a>
           <a
