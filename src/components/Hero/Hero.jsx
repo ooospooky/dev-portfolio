@@ -40,7 +40,7 @@ export const Hero = () => {
             </span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1ZRaYPldDaXNtI6bqArv2V0kK5JT16J2a/view?usp=sharing"
+            href="https://drive.google.com/file/d/1P5t-hTSzaKTubO6293PEVyblJLkbb6QL/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
