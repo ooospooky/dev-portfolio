@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-portfolio/static/css/main.7673dd1c.css",
-    "main.js": "/dev-portfolio/static/js/main.e6348d14.js",
+    "main.js": "/dev-portfolio/static/js/main.66a69669.js",
     "static/js/887.9fcadd41.chunk.js": "/dev-portfolio/static/js/887.9fcadd41.chunk.js",
     "static/media/foodOrder.png": "/dev-portfolio/static/media/foodOrder.e852765c901c8ded6698.png",
     "static/media/whatShouldIWear.png": "/dev-portfolio/static/media/whatShouldIWear.844a78e40b75a9ee5cd3.png",
@@ -9,16 +9,18 @@
     "static/media/linux3.png": "/dev-portfolio/static/media/linux3.2205d1d4d34c2c246849.png",
     "static/media/chart.png": "/dev-portfolio/static/media/chart.f32a9bc93aea137a6a95.png",
     "static/media/nextjs.png": "/dev-portfolio/static/media/nextjs.9deba75e6be90d5f2879.png",
-    "static/media/sass.png": "/dev-portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
     "static/media/typescript.png": "/dev-portfolio/static/media/typescript.370bd8ed7381c3f2ee45.png",
     "static/media/firebase.png": "/dev-portfolio/static/media/firebase.2a23f4f8980818de8394.png",
+    "static/media/reactQuery.svg": "/dev-portfolio/static/media/reactQuery.2d535759927f6ccad010c271956f175b.svg",
+    "static/media/storybook.svg": "/dev-portfolio/static/media/storybook.c143760c5be7f175b06e6be31349892f.svg",
     "index.html": "/dev-portfolio/index.html",
+    "static/media/tailwind.svg": "/dev-portfolio/static/media/tailwind.dc73a72962ab64d775be1c21b7a10702.svg",
     "main.7673dd1c.css.map": "/dev-portfolio/static/css/main.7673dd1c.css.map",
-    "main.e6348d14.js.map": "/dev-portfolio/static/js/main.e6348d14.js.map",
+    "main.66a69669.js.map": "/dev-portfolio/static/js/main.66a69669.js.map",
     "887.9fcadd41.chunk.js.map": "/dev-portfolio/static/js/887.9fcadd41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7673dd1c.css",
-    "static/js/main.e6348d14.js"
+    "static/js/main.66a69669.js"
   ]
 }
