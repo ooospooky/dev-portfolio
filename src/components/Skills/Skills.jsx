@@ -5,9 +5,9 @@ import { left200Animation } from "../../Animations/Animation";
 import javascript from "../../images/skills/javascript.png";
 import typescript from "../../images/skills/typescript.png";
 import python from "../../images/skills/python.png";
-import html5 from "../../images/skills/html5.png";
-import css from "../../images/skills/css.png";
-import sass from "../../images/skills/sass.png";
+import storybook from "../../images/skills/storybook.svg";
+import tailwind from "../../images/skills/tailwind.svg";
+import reactQuery from "../../images/skills/reactQuery.svg";
 import reactlogo from "../../images/skills/react.png";
 import redux from "../../images/skills/redux.png";
 import firebase from "../../images/skills/firebase.png";
@@ -44,24 +44,24 @@ export const Skills = () => {
           <h4>Front End</h4>
           <div className="skills__content">
             <div>
-              <img src={nextjs} />
-              <p>Next.js</p>
-            </div>
-            <div>
               <img src={reactlogo} />
               <p>React</p>
             </div>
             <div>
-              <img src={sass} />
-              <p>Scss</p>
+              <img src={nextjs} />
+              <p>Next.js</p>
+            </div>
+            <div>
+              <img src={tailwind} />
+              <p>Tailwind</p>
             </div>
             <div>
               <img src={redux} />
               <p>Redux</p>
             </div>
             <div>
-              <img src={html5} />
-              <p>HTML5</p>
+              <img src={reactQuery} />
+              <p>React Query</p>
             </div>
           </div>
         </div>
@@ -82,6 +82,10 @@ export const Skills = () => {
             <div>
               <img src={firebase} />
               <p>Firebase</p>
+            </div>
+            <div>
+              <img src={storybook} />
+              <p>Storybook</p>
             </div>
           </div>
         </div>
